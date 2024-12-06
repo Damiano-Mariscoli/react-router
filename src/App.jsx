@@ -6,16 +6,18 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./HomePage.jsx";
 import { Content } from "./Content.jsx";
 import { ChiSiamo } from "./ChiSiamo.jsx";
-import MainNav from "./MainNav.jsx";
+
+import DefaultLayout from "./DefaultLayout.jsx";
 
 function App() {
   return (
     <BrowserRouter>
-      <MainNav />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/chi-siamo" element={<ChiSiamo />} />
-        <Route path="/languages" element={<Content />} />
+        <Route element={<DefaultLayout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/chi-siamo" element={<ChiSiamo />} />
+          <Route path="/languages" element={<Content />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

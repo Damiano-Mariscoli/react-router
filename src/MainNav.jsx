@@ -4,6 +4,7 @@ function MainNav() {
   return (
     <nav>
       <Link to="/">Home Page</Link>
+      <Link to="/chi-siamo">Chi siamo</Link>
       <NavLink to="/languages">Linguaggi</NavLink>
     </nav>
   );
