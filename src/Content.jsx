@@ -1,4 +1,4 @@
-import { languages } from "./data/languages";
+import { languages } from "./data/languages.js";
 
 export function Content() {
   return (
@@ -8,7 +8,6 @@ export function Content() {
           <li key={language.id}>{language.title}</li>
         ))}
       </ul>
-      <a href="http://localhost:5173/"> Home Page</a>
     </>
   );
 }
