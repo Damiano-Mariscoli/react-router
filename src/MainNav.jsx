@@ -5,7 +5,9 @@ function MainNav() {
     <nav>
       <Link to="/">Home Page</Link>
       <Link to="/chi-siamo">Chi siamo</Link>
-      <NavLink to="/languages">Linguaggi</NavLink>
+      <NavLink className={"confirm"} to="/languages">
+        Linguaggi
+      </NavLink>
     </nav>
   );
 }
